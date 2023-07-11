@@ -1,0 +1,16 @@
+{
+    "name": "filipefaralhe/htlv-bot",
+    "autoload": {
+        "psr-4": {
+            "Filipefaralhe\\HtlvBot\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "FilipeFaralhe"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
