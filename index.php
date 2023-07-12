@@ -1,12 +1,14 @@
 <?php
 
-// incluindo o composer
+/*  incluindo o composer */
 require 'vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createUnsafeImmutable(__DIR__);
-$dotenv->load();
+/* incluindo classe bot */
+require_once 'config/config.php';
+require_once 'src/Bot.php';
 
-echo "Recuperar o ambiente: " . getenv('APP_ENV')
-
+/* Inicia o bot */
+$bot = new Bot();
+$bot->init();
 
 ?>
